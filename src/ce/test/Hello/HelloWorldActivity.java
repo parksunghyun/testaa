@@ -20,9 +20,8 @@ public class HelloWorldActivity extends Activity implements OnClickListener {
     }
     public void onClick(View v) {
     	// TODO Auto-generated method stub
-    	//Intent it = new Intent (Intent.ACTION_SENDTO,Uri.parse("smsto:"));
-    	//Intent it = new Intent (Intent.ACTION_DIAL,Uri.parse("tel:"));
-    	//startActivity(it);
-    	
+    	Intent it = new Intent (Intent.ACTION_SENDTO,Uri.parse("smsto:"));
+    	Intent it = new Intent (Intent.ACTION_DIAL,Uri.parse("tel:"));
+    	startActivity(it);
     }
 }
